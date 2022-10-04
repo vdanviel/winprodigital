@@ -1,0 +1,468 @@
+html,body{
+
+}
+/*IMPORTANDO*/
+/*ubuntu*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/*heebo*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap');
+
+/*MENU*/
+/*IMAGEM FUNDO MENU*/
+#image-menu{
+    background: #216fb0;
+    background: url('../img/kuala-lumpur-1820944.jpg');
+    width: 100%;
+    background-size:cover;
+    height: 254px;
+    background-repeat: no-repeat;
+}
+/*PRETO TRANSPARENTE*/
+#back-menu{
+    background: rgba(58, 58, 58, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+}
+/*NAVEGAÇÃO*/
+/*logo-pag-nav*/
+#logo-block{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#logo-block span{
+    background-image: url(../img/logo2.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 71px;
+    height: 79px;
+    background-size: 71px 79px;
+    margin-right:18px;
+}
+#logo-block h1{
+    font-family: 'Heebo', sans-serif;
+    cursor: default;
+    font-size: 63px;
+    font-weight: bold;
+    color: #ffffff;
+}
+/*navegação*/
+#nav > ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+/*a barrinha*/
+#nav ul li{
+    font-family: 'Ubuntu', sans-serif;
+    color: #979797;
+    text-decoration: none;
+    cursor: default;
+    font-size: 20px;
+}
+#nav a{
+    font-family: 'Ubuntu', sans-serif;
+    color: #979797;
+    text-decoration: none;
+    margin: 0px 30px;
+    font-size: 18px;
+    transform: rotate(-0.0000000001deg);
+}
+#nav a:hover{
+    color: #ffffff;
+}
+/*WPP CANTO*/
+#whatsapp {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+#whatsapp img{
+    cursor: pointer;
+    width:47px;
+    height: 47px;
+}
+/*RELATOS - ESTÁ EM css/quote*/
+/*CITAÇÃO - ESTÁ EM css/quote*/
+/*ESTÁTISTICAS*/
+#back-stat{
+    background: linear-gradient(217deg, #216fb0,#4d52a5 70.71%);
+    cursor: default;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#back-stat div:first-child{
+    flex-direction: column;
+    justify-content: center;
+}
+#back-stat div{
+    display: flex;
+    justify-content: space-around;
+}
+#back-stat h1{
+    color: #ffffff;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    font-size: 82px;
+    line-height: 65px;
+}
+#back-stat div:first-child h2{
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    padding: 8px;
+}
+#back-stat div h2{
+    color: #ffffff;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 86px;
+}
+#back-stat div h4{
+    color: #ffffff;
+    font-family: 'Heebo', sans-serif;
+    text-align: left;
+    font-size: 28px;
+}
+#back-stat h5{
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 28px;
+}
+/*AGENDAMENTO*/
+#agendar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0px;
+}
+#agendar h2{
+    color: #216fb0;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 28px;
+    padding: 0px 20px;
+}
+/*botão agendar*/
+#agendar a{
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0;
+    padding: 14px;
+    border: none;
+    font-size: 20px;
+    background: linear-gradient(90deg,#216fb0,#4a54a8);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 15px;
+}
+#agendar a img{
+    margin-left: 15px;
+}
+#agendar a img{
+    width: 37px;
+    height: 20px;
+}
+/*seta animação*/
+#agendar a img{
+    animation: movimentX 1s ease infinite alternate;
+}
+@keyframes movimentX {
+    from{
+        transform: translateX(1px);
+    }to{
+        transform: translateX(-2px);
+    }
+}
+/*fim animação botão agendar*/
+
+/*RODAPÉ*/
+#rodape{
+    width: 100%;
+    background: #ffffff;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+#rodape div{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+#rodape div img{
+    width: 50px;
+    margin: 15px;
+}
+#rodape div:last-child{
+    flex-direction: column;
+}
+#rodape h3{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5px;
+}
+#rodape h3:first-child{
+    color: #216fb0;
+    font-weight: bold;
+}
+/*MOBILE RESOLUTIONS*/
+/*920 <*/
+@media (max-width:920px){
+    #image-menu {
+        height: 124px;
+        background: url(../img/kuala-lumpur-1820944-MOBILE920px.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #logo-block h1 {
+        font-size: 56px;
+    }
+    #back-menu {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    #nav{
+        display: none;
+    }
+    #fundo-hamburguer {
+        opacity: 1;
+        cursor: pointer;
+        margin-right: 12px;
+     }
+     #logo-block h1 {
+        font-size: 40px;
+    }
+    #logo-block span {
+        width: 61px;
+        height: 68px;
+        background-size: 61px 68px;
+        margin: 0px 12px;
+    }
+    #back-report {
+        padding-top: 40px;
+    }
+    #back-report > div img{
+        display: none;
+    }
+    #report{
+        width: 35vh;
+    }
+    h6{
+        display: none;
+    }
+    #content div h4 {
+        margin: 8px 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+    #text div {
+        background-size: 26px 18px;
+        width: 26px;
+        height: 18px;
+    }
+    #text p {
+        font-size: 10px;
+    }
+    #back-stat h1 {
+        font-size: 72px;
+        line-height: 78px;
+    }
+    #back-stat div:first-child h2{
+        font-size: 20px;
+    }
+    #back-stat div h2 {
+        font-size: 76px;
+    }
+    #back-stat div h4 {
+        color: #ffffff;
+        font-family: 'Heebo', sans-serif;
+        text-align: left;
+        font-size: 23px;
+    }
+    #rodape h3 {
+        font-size: 15px;
+    }
+}
+/*720 <*/
+@media (max-width:735px){
+    #logo-block h1 {
+        font-size: 40px;
+    }
+    #logo-block span {
+        width: 61px;
+        height: 68px;
+        background-size: 61px 68px;
+    }
+    #report{
+        margin: 25px 0px;
+        width: 35vh;
+    }
+    #back-stat {
+        height: 125vh;
+        justify-content: space-evenly;
+    }
+    #back-stat div {
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+    #back-stat div section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+    #back-stat h1 {
+        font-size: 54px;
+        padding-top: 30px;
+        line-height: 50px;
+    }
+    #back-stat div h2 {
+        font-size: 65px;
+        margin: 0;
+    }
+    #back-stat div h4 {
+        margin-top: 6px;
+        text-align: center;
+    }
+    #back-stat h5{
+        font-size: 20px;
+        padding-bottom: 32px;
+    }
+    #rodape div img {
+        width: 42px;
+        margin: 12px;
+    }
+    #rodape h3 {
+        font-family: 'Ubuntu', sans-serif;
+        margin: 5px;
+        font-size: 15px;
+    }
+}
+/*680 <*/
+@media (max-width:680px){
+    #logo-block span {
+        width: 45px;
+        height: 50px;
+        background-size: 45px 50px;
+    }
+    #logo-block h1 {
+       font-size: 24px;
+    }
+    #image-menu {
+        height: 81px;
+    }
+    #back-report > div {
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+    }
+    #report {
+        margin: 25px 0px;
+        width: 45vh;
+    }
+    #content div h4 {
+         margin:0;
+         font-size: 17px;
+    }
+    #back-stat h5{
+        font-size: 18px;
+        padding-bottom: 32px;
+        margin: 0px 20px;
+    }
+    #text p {
+        font-size: 10px;
+    }
+    #whatsapp img {
+        width: 39px;
+        height: 39px;
+    }
+    #whatsapp {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+    }
+}
+/*495 <*/
+@media (max-width:495px){
+    #logo-block span {
+        width: 45px;
+        height: 50px;
+        background-size: 45px 50px;
+        margin-right: 12px;
+    }
+    #logo-block h1 {
+       font-size: 24px;
+    }
+    #image-menu {
+        height: 81px;
+    }
+    #report {
+        width: 31vh;
+    }
+    #back-stat h1 {
+        font-size: 48px;
+        padding-top: 30px;
+        line-height: 45px;
+    }
+    #back-stat div:first-child h2{
+        font-size: 15px;
+        padding: 5px;
+    }
+    #back-stat div h2 {
+        font-size: 60px;
+    }
+    #back-stat div h4 {
+        font-size: 19px;
+    }
+    #agendar h2 {
+        font-size: 20px;
+    }
+    #rodape {
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 0px;
+    }
+    #rodape div{
+        width: 100%;
+    }
+    #rodape div img {
+        width: 25px;
+        height: 25px;
+        margin: 8px;
+    }
+    #rodape h3:first-child {
+        margin-top: 0;
+    }
+    #rodape h3 {
+        font-size: 16px;
+        margin: 5px 10px;
+    }
+}
+/*430 <*/
+@media (max-width:430px){
+    #back-stat h1 {
+        font-size: 38px;
+        padding-top: 30px;
+    }
+}

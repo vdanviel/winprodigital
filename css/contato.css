@@ -1,0 +1,342 @@
+html,body{
+    background: #363636
+}
+/*IMPORTANDO*/
+
+/*ubuntu*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/*heebo*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap');
+
+/*MENU*/
+/*IMAGEM FUNDO MENU*/
+#image-menu{
+    background: #216fb0;
+    background: url('../img/mountains-190055.jpg');
+    width: 100%;
+    background-size:cover;
+    height: 254px;
+    background-repeat: no-repeat;
+}
+/*PRETO TRANSPARENTE*/
+#back-menu{
+    background: rgba(58, 58, 58, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+}
+/*NAVEGAÇÃO*/
+/*logo-pag-nav*/
+#logo-block{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#logo-block span{
+    background-image: url(../img/logo2.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 71px;
+    height: 79px;
+    background-size: 71px 79px;
+    margin-right:18px;
+}
+#logo-block h1{
+    font-family: 'Heebo', sans-serif;
+    cursor: default;
+    font-size: 63px;
+    font-weight: bold;
+    color: #ffffff;
+}
+/*navegação*/
+#nav > ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+/*a barrinha*/
+#nav ul li{
+    font-family: 'Ubuntu', sans-serif;
+    color: #979797;
+    text-decoration: none;
+    cursor: default;
+    font-size: 20px;
+}
+#nav a{
+    font-family: 'Ubuntu', sans-serif;
+    color: #979797;
+    text-decoration: none;
+    margin: 0px 30px;
+    font-size: 18px;
+    transform: rotate(-0.0000000001deg);
+}
+#nav a:hover{
+    color: #ffffff;
+}
+/*FORMULÁRIO*/
+#form{
+    background-image: url(../img/bubbles.png);
+    background-repeat: repeat-x;
+    background-size: 899px 83px;
+    background-position-x: 6%;
+    background-position-y: 21%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+}
+#form > div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#form > div form{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+#form h2{
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    font-size: 22px;
+}
+#form > div form input[type="text"],
+#form > div form input[type="email"]{
+    margin: 10px 0px;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    width: 84vh;
+    padding: 10px;
+    border-radius: 16px;
+}
+#form > div form input[type="text"]{
+    margin-top: 0;
+}
+#form > div form textarea{
+    resize: none;
+    height: 22vh;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 16px;
+}
+#form div form button{
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0;
+    padding: 14px;
+    border: none;
+    font-size: 20px;
+    background: linear-gradient(90deg,#216fb0,#4a54a8);
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 15px;
+}
+#form > div form input[type="button"]{
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0;
+    padding: 14px;
+    border: none;
+    font-size: 20px;
+    background:#216fb0;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+i{
+    font-style: oblique;
+}
+/*RODAPÉ*/
+#rodape{
+    width: 100%;
+    background: #ffffff;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+#rodape div{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+#rodape div img{
+    width: 50px;
+    margin: 15px;
+}
+#rodape div:last-child{
+    flex-direction: column;
+}
+#rodape h3{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5px;
+}
+#rodape h3:first-child{
+    color: #216fb0;
+    font-weight: bold;
+}
+/*MOBILE RESOLUTIONS*/
+/*1200 <*/
+@media (max-width:1200px){
+    #form{
+        height: 88vh;
+    }
+}
+/*998 <*/
+@media (max-width:998px){
+    #image-menu {
+        height: 124px;
+        background: url(../img/mountains-190055-MOBILE920px.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #logo-block h1 {
+        font-size: 56px;
+    }
+    #back-menu {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    #nav{
+        display: none;
+    }
+    #fundo-hamburguer {
+        opacity: 1;
+        cursor: pointer;
+        margin-right: 12px;
+     }
+     #logo-block h1 {
+        font-size: 40px;
+    }
+    #logo-block span {
+        width: 61px;
+        height: 68px;
+        background-size: 61px 68px;
+        margin: 0px 12px;
+    }
+
+    #rodape h3 {
+        font-size: 15px;
+    }
+}
+/*735 <*/
+@media (max-width:735px){
+    #logo-block h1 {
+        font-size: 40px;
+    }
+    #logo-block span {
+        width: 61px;
+        height: 68px;
+        background-size: 61px 68px;
+    }
+
+    #rodape div img {
+        width: 42px;
+        margin: 12px;
+    }
+    #rodape h3 {
+        font-family: 'Ubuntu', sans-serif;
+        margin: 5px;
+        font-size: 15px;
+    }
+    #form h2 {
+        font-size: 19px;
+        padding-left: 20px;
+    }
+}
+/*680 <*/
+@media (max-width:680px){
+    #logo-block span {
+        width: 45px;
+        height: 50px;
+        background-size: 45px 50px;
+    }
+    #logo-block h1 {
+       font-size: 24px;
+    }
+    #image-menu {
+        height: 81px;
+    }
+    #form{
+        justify-content: left;
+    }
+    #form > div{
+        align-items: flex-start;
+    }
+}
+/*528 <*/
+@media (max-width:528px){
+    #form {
+        background-size: 641px 61px;
+        background-position-y: 3%;
+        height: 86vh;
+    }
+    #form h2 {
+        display: none;
+    }
+    #form > div {
+        justify-content: center;
+    }
+    #form > div form input[type="text"]{
+        margin-top: 21px;
+    }
+    #form > div form input[type="text"],
+    #form > div form input[type="email"] {
+        width: 40vh;
+        margin: 11px 0px;
+    }
+    #form > div form textarea {
+        width: 40vh;
+        margin: 11px 0px;
+    }
+}
+/*495 <*/
+@media (max-width:485px){
+    #logo-block span {
+        width: 45px;
+        height: 50px;
+        background-size: 45px 50px;
+        margin-right: 12px;
+    }
+    #logo-block h1 {
+       font-size: 24px;
+    }
+    #rodape {
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 0px;
+    }
+    #rodape div{
+        width: 100%;
+    }
+    #rodape div img {
+        width: 25px;
+        height: 25px;
+        margin: 8px;
+    }
+    #rodape h3:first-child {
+        margin-top: 0;
+    }
+    #rodape h3 {
+        font-size: 16px;
+        margin: 5px 10px;
+    }
+}

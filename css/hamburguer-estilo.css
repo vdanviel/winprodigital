@@ -1,0 +1,102 @@
+/*IMPORTANDO*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/*fundo*/
+#fundo-hamburguer{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-self: center;
+    cursor: default;
+    transition: ease-in-out 0.5s;
+    background: transparent;
+    opacity: 0;
+}
+/*aparência do hamburguer*/
+/*palito do meio*/
+#hamburguer{
+     background: white;
+     display: block;
+     width: 40px;
+     height: 3px;
+     border-radius: 16px;
+     position: relative;
+     top: 28px;
+     left: 10px;
+     transition: 0.5s ease-in-out;
+}
+/*palito de cima*/
+#hamburguer::before{
+    background: white;
+    display: block;
+    width: 40px;
+    content: '';
+    height: 3px;
+    position: relative;
+    top: -10px;
+    border-radius: 16px;
+    transition: 0.5s ease-in-out;
+}
+/*palito de baixo*/
+#hamburguer::after{
+     background: white;
+     display: block;
+     width: 40px;
+     content: '';
+     height: 3px;
+     position: relative;
+     bottom: -7px;
+     border-radius: 16px;
+     transition: 0.5s ease-in-out;
+}
+/*botão pra ativação - escondido*/
+#ativar-hamburguer{
+    display: none;
+}
+/*botão acionado (animação)*/
+
+/*fundo menu se espande*/
+#ativar-hamburguer:checked ~ label #fundo-hamburguer{
+     background:#216fb0;
+     box-shadow: 0 0 0 250vh #216fb0,0 0 0 250vh #216fb0 ; 
+}
+/*rotacionar linha do meio*/
+#ativar-hamburguer:checked ~ label #hamburguer{
+     transform: rotate(45deg);
+}
+/*rotacionar linha de cima*/
+#ativar-hamburguer:checked ~ label #hamburguer::before{
+     transform: rotate(90deg);
+     top: 0;
+}
+/*rotacionar linha de baixo*/
+#ativar-hamburguer:checked ~ label #hamburguer::after{
+     transform: rotate(-90deg);
+     bottom: 3px;
+}
+/*navegação hamburguer (qnd a tela esta cheia)*/
+#nav-hamburguer{
+     flex-direction: column;
+     height: 78%;
+     margin: 0;
+     padding: 0;
+     transition: 0.5s 1s ease-in-out;
+     display: none;
+     align-items: center;
+}
+#nav-hamburguer a{
+    text-decoration: none;
+    color: #979797;
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+}
+#nav-hamburguer li{
+     margin:10px;
+ }
+/*botão acionado (animação da navegação)*/
+#ativar-hamburguer:checked ~ #nav-hamburguer{
+     display: flex;
+     justify-content: center;
+}

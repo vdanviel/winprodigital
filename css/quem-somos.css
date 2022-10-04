@@ -1,0 +1,654 @@
+html,body{
+}
+/*IMPORTANDO*/
+
+/*ubuntu*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/*heebo*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap');
+
+/*IMAGEM FUNDO MENU*/
+#image-menu{
+    background: #216fb0;
+    background: url('../img/aurora-1197753.jpg');
+    width: 100%;
+    background-size: cover;
+    height: 254px;
+    background-repeat: no-repeat;
+}
+/*PRETO TRANSPARENTE*/
+#back-menu{
+    background: rgba(58, 58, 58, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+
+}
+/*NAVEGAÇÃO*/
+/*logo-pag-nav*/
+#logo-block{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#logo-block span{
+    background-image: url(../img/logo2.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 71px;
+    height: 79px;
+    background-size: 71px 79px;
+    margin-right:18px;
+}
+#logo-block h1{
+    font-family: 'Heebo', sans-serif;
+    cursor: default;
+    font-size: 63px;
+    font-weight: bold;
+    color: #ffffff;
+}
+/*navegação*/
+#nav > ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+/*a barrinha*/
+#nav ul li{
+    font-family: 'Ubuntu', sans-serif;
+    color: #979797;
+    text-decoration: none;
+    cursor: default;
+    font-size: 20px;
+}
+#nav a{
+    font-family: 'Ubuntu', sans-serif;
+    color: #979797;
+    text-decoration: none;
+    margin: 0px 30px;
+    font-size: 18px;
+    transform: rotate(-0.0000000001deg);
+}
+#nav a:hover{
+    color: #ffffff;
+}
+/*WPP CANTO*/
+#whatsapp img{
+    cursor: pointer;
+    width:47px;
+    height: 47px;
+}
+#whatsapp {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+/*QUEM SOMOS CONTENT*/
+#quem-somos{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    background: #363636;
+}
+#quem-somos img{
+    width: 46%;
+    object-fit: cover;
+}
+/*quem somos bubbles/pai de todos no texto qm somos*/
+#quem-somos >div{
+    background-image: url('../img/bubbles.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 33%;
+    background-position-y: 29%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/*quem somos text div*/
+#quem-somos div>div{
+    width: 55%;
+    align-content: center;
+}
+i{
+    font-style: oblique;
+}
+#quem-somos div>div p {
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    word-spacing: 4px;
+}
+/*SERVIÇOS*/
+#servicos{
+    text-align: center;
+    display: flex;
+    align-content: center;
+    height: 100%;
+    padding: 25px 0px;
+}
+#servicos div {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+#servicos h1{
+    font-family: 'Heebo', sans-serif;
+    cursor: default;
+    font-size: 64px;
+    font-weight: bold;
+    align-self: center;
+    text-align: left;
+    color:#216fb0;
+    width: 62%;
+    padding: 10px;
+
+}
+#servicos section {
+    background: #4a54a8;
+    width: 40vh;
+    height: 40vh;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: default;
+}
+#servicos div section:nth-child(2){
+    margin-right: 0;
+    margin-bottom: 0;
+}
+#servicos div section:nth-child(3){
+    margin-bottom: 0;
+}
+#servicos div section:nth-child(4){
+    margin-right: 0;
+    margin-bottom: 0;
+}
+#servicos section:hover{
+    background: linear-gradient(90deg,#216fb0,#4a54a8);
+    filter: drop-shadow(2px 4px 6px black);
+}
+#servicos div section img{
+    width: 30%;
+}
+#servicos section h2{
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: bold;
+}
+#servicos section h5{
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 0px 20px;
+}
+/*EQUIPE*/
+/*equipe til*/
+#equipe-til{
+    width: 100%;
+    height: 135px;
+    background-position-y:top;
+    background-size: cover;
+    background-image: url('../img/himalayas-2301040.jpg');
+    background-repeat: no-repeat;
+}
+#equipe-til > div{
+    background: rgba(58, 58, 58, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#equipe-til h1{
+    font-family: 'Heebo', sans-serif;
+    cursor: default;
+    font-size: 64px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 25px;
+}
+/*equipe content*/
+#equipe{
+    padding: 30px;
+    background: #ffffff;
+}
+#equipe > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 45px;
+}
+#equipe div > img{
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    5px 5px 0px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         5px 5px 0px 0px rgba(50, 50, 50, 0.75);
+    object-fit: cover;
+}
+#equipe div:nth-child(2) > img{
+    -webkit-box-shadow: -5px 5px 0px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    -5px 5px 0px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         -5px 5px 0px 0px rgba(50, 50, 50, 0.75);
+}
+#equipe div>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#equipe div div div{
+    flex-direction: row;
+}
+#equipe h1{
+    font-family: 'Ubuntu', sans-serif;
+    color: #216fb0;
+    font-size: 25px;
+    font-weight: bold;
+}
+#equipe div a{  
+    font-family: 'Ubuntu', sans-serif;
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#equipe div a img{
+    width: 28px;
+    margin: 10px;
+}
+/*AGENDAMENTO*/
+#agendar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg,#216fb0,#4a54a8);
+    height: 130px;
+    justify-content: space-around;
+    border-radius: 16px;
+    margin: 0px 10px;
+    margin-bottom: 65px;
+}
+#agendar h2{
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    padding: 0px 20px;
+}
+/*botão agendar*/
+#agendar a{
+    font-family: 'Ubuntu', sans-serif;
+    color: #4a54a8;
+    text-decoration: none;
+    margin: 0;
+    padding: 14px;
+    border: none;
+    font-size: 20px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+#agendar a img{
+    margin-left: 15px;
+}
+#agendar a img{
+    width: 37px;
+    height: 20px;
+}
+/*seta animação*/
+#agendar a img{
+    animation: movimentX 1s ease infinite alternate;
+}
+@keyframes movimentX {
+    from{
+        transform: translateX(1px);
+    }to{
+        transform: translateX(-2px);
+    }
+}
+/*fim animação botão agendar*/
+/*RODAPÉ*/
+#rodape{
+    width: 100%;
+    background: #ffffff;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+#rodape div{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+#rodape div img{
+    width: 50px;
+    margin: 15px;
+}
+#rodape div:last-child{
+    flex-direction: column;
+}
+#rodape h3{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5px;
+}
+#rodape h3:first-child{
+    color: #216fb0;
+    font-weight: bold;
+}
+
+/*RESOLUÇÕES MOBILE*/
+/*1000*/
+@media (max-width: 1000px){
+    #servicos div:first-child{
+        display: none;
+    }
+    #servicos{
+       justify-content: center;
+    }
+    #servicos div{
+       width: 71%;
+    }
+}
+/*975 <*/
+@media (max-width: 920px){
+    #image-menu{
+        height: 124px;
+        background: url(../img/aurora-1197753-MOBILE920px.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #back-menu{
+        background: rgba(58, 58, 58, 0.7);
+        width: 100%;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    #logo-block h1 {
+        font-size: 40px;
+    }
+    #logo-block {
+        margin-bottom: 0;
+    }
+    #logo-block span{
+        width: 61px;
+        height: 68px;
+        background-size: 61px 68px;
+        margin:0px 12px;
+    }
+    #nav{
+        display: none;
+    }
+    #fundo-hamburguer {
+        opacity: 1;
+        cursor: pointer;
+        margin-right: 12px;
+    }
+    #nav-hamburguer li {
+        margin: 10px 0px;
+    }
+    #quem-somos {
+        flex-direction: column;
+        background-image: url(../img/bubbles.png);
+        background-repeat: no-repeat;
+        background-size: 928px 97px;
+        background-position-x: 44%;
+        background-position-y: 78%;
+    }    
+    #quem-somos img {
+        width: 100%;
+        object-fit: cover;
+        height: 55%;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+    #quem-somos > div {
+        background-image: none;
+    }
+    #quem-somos div>div {
+        width:45%;
+        background-image: none;
+    }
+    #quem-somos div>div p {
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        word-spacing: 0;
+    }
+    #equipe{
+        padding: 0;
+    }
+    #servicos{
+    height: 96vh;
+    justify-content: center;
+    }
+    #servicos div:first-child{
+        display: none;
+    }
+    #servicos div{
+        width: 97vh;
+    }
+    #servicos section{
+        background: linear-gradient(90deg,#216fb0,#4a54a8);
+    }
+    #servicos section:hover{
+        filter: none;
+    }
+    #equipe-til {
+        background-image: url(../img/himalayas-2301040-MOBILE920px.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 75px;
+    }
+    #equipe-til>div {
+        justify-content: center;
+    }
+    #equipe-til h1 {
+        font-size: 32px;
+        margin-left: 0;
+    }
+    #equipe div > img {
+        width: 240px !important;
+    }
+    #equipe h1 {
+        font-size: 18px;
+    }
+    #equipe > div {
+        margin: 30px 0px;
+    }
+    #equipe div a {
+        font-size: 12px;
+    }
+    #equipe div a img {
+        width: 19px;
+        margin-right: 5px;
+    }
+    #rodape div img {
+        width: 42px;
+        margin: 20px;
+    }
+    #rodape h3 {
+        font-size: 15px;
+    }
+}
+/*680 <*/
+@media (max-width:680px){
+    #logo-block span {
+        width: 45px;
+        height: 50px;
+        background-size: 45px 50px;
+        margin-right: 12px;
+    }
+    #logo-block h1 {
+       font-size: 24px;
+    }
+    #image-menu {
+        height: 81px;
+    }
+    #quem-somos{
+        height: auto;
+    }
+    #quem-somos img {
+        display: none;
+    }
+    #quem-somos div>div {
+        width: unset;
+    }
+    #quem-somos div>div p {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 30px;
+    }
+    #quem-somos {
+        background-position-y: 29%;
+    }
+    #equipe > div {
+        justify-content: space-around;
+        margin: 30px 0px;
+    }
+    #whatsapp img {
+        width: 39px;
+        height: 39px;
+    }
+    #whatsapp {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+    }
+}
+/*540 <*/
+@media (max-width:540px){
+    #logo-block span {
+        width: 45px;
+        height: 50px;
+        background-size: 45px 50px;
+        margin-right: 12px;
+    }
+    #logo-block h1 {
+       font-size: 24px;
+    }
+    #image-menu {
+        height: 81px;
+    }
+    #quem-somos div>div p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    #equipe h1 {
+        font-size: 15px;
+    }
+    #equipe div > img {
+        width: 200px;
+        height: 300px;
+    }
+    #servicos{
+        height: auto;
+        padding: 25px 0px;
+    }
+    #servicos div {
+        width:auto; 
+        flex-wrap: unset;
+        flex-direction: column;
+        align-items: center;
+    }
+    #servicos section {
+        width: 35vh;
+        height: 35vh;
+        margin: 10px 0px !important;
+    }
+    #servicos div section img {
+        width: 26%;
+    }
+    #servicos section h2 {
+        font-size: 17px;
+    }
+    #servicos section h5 {
+        font-size: 13px;
+    }
+    #agendar h2 {
+        font-size: 16px;
+    }
+    #agendar a {
+        font-size: 14px;
+    }
+    #agendar a img {
+        width: 30px;
+        height: 15px;
+    }
+}
+/*485 <*/
+@media (max-width:485px){
+    #quem-somos div>div p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    #equipe > div {
+        flex-direction: column;
+        align-items: center;
+    }
+    #equipe > div:last-child {
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+    }
+    #equipe div > img {
+        margin: 20px 0px;
+    }
+    #agendar {
+        margin: 20px 8px;
+        margin-bottom: 18px;
+        padding: 15px;
+    }
+    #agendar h2 {
+        font-size: 16px;
+    }
+    #rodape {
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 0px;
+    }
+    #rodape div{
+        width: 100%;
+    }
+    #rodape div img {
+        width: 25px;
+        height: 25px;
+        margin: 8px;
+    }
+    #rodape h3:first-child {
+        margin-top: 0;
+    }
+    #rodape h3 {
+        font-size: 16px;
+        margin: 5px 10px;
+    }
+}

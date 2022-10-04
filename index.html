@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="img/logo2.ico"> 
+    <title>Home - Winpro Digital | Nos deixe melhorar a visibilidade de seu negócio!</title>
+
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="css/hamburguer-estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+
+    <!--GOOGLE TAG MANAGER-->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TJV988X');
+    </script>
+</head>
+<body>
+
+<!--BLOCO PAI IMAGEM-->
+<div id="back-image">
+    <!--PRETO TRANSPARENTE-->
+    <div id="black-block">
+        
+        <!--MENU TOPO-->
+        <header>
+            <div id="nav">
+                <ul>
+                    <li><a href="/" id="b1">Home</a>/</li>
+                    <li><a href="quem-somos.html">Quem Somos</a>/</li>
+                    <li><a href="feedback.html" id="b1">Feedbacks</a>/</li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <!--MENU HAMBURGUER MOBILE-->
+            <!--checkbox quando o menu-hamburguer for ativado-->
+            <input type="checkbox" id="ativar-hamburguer">
+
+            <!--indicação do que o checkbox ira acionar-->
+            <label for="ativar-hamburguer">
+
+                 <!--fundo-->
+                <div id="fundo-hamburguer">
+                    <!--o hamburguer-->
+                    <span id="hamburguer"></span> 
+                </div>
+
+            <!--LABEL - para a DESATIVAÇÃO e ATIVAÇÃO dos itens ao clicar no menu MOBILE.-->    
+            </label> 
+
+            <ul id="nav-hamburguer">
+                <li><a href="/" id="b2">Home</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="feedback.html">Feedbacks</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <!--FIM MENU HAMBURGUER MOBILE-->
+
+        </header>
+
+        <!--WHATSAPP-->
+        <a id="whatsapp" target="_blank" href="https://wa.me/5511982652537?text=Olá,%20você%20pode%20me%20explicar%20como%20funciona%20a%20WinPro%20Digital%20?"><img src="img/whatsapp-verde.png" alt="wpp"></a>
+
+        <!--SITE CONTENT-->
+            <section>
+                <!--LOGO-->
+                <div id="logo-block">
+                    <span class="animate__animated animate__rotateIn" tag="WINPRO LOGO"></span>
+                    <h1>WINPRO DIGITAL</h1>
+                </div>
+
+                <!--CONTEÚDO-->
+                <div id="content">
+                    <h1>OFERECEMOS</h1>
+                    <h1 id="word-change">RESULTADOS.</h1>
+                </div>
+
+                <!--CALENDLY-->
+                <div id="agendar">
+                    <h2>Clique no botão para agendar uma consultoria gratuita conosco!</h2>
+                    <a href="https://calendly.com/winpro-digital/consultoria-gratuita" target="_blank">Agendar!<img src="img/right-arrow.png" alt=""></a>
+                </div>
+            </section>            
+    </div>
+</div>
+
+<!--RODAPÉ-->
+<footer id="rodape">
+    <div>
+        <a  target="_blank" href="https://www.instagram.com/winprodigital/"><img src="img/instagram.png" alt=""></a>
+        <a  target="_blank" href="https://www.facebook.com/winpro.digital"><img src="img/facebook.png" alt=""></a>
+        <a  target="_blank" href="https://www.linkedin.com/in/win-pro-122abb222"><img src="img/linkedin.png" alt=""></a>
+    </div>
+    <div>
+        <h3>winpro.marketing1@gmail.com</h3>
+        <h3>Feito com &#128155; por <a target="_blank" href="https://www.instagram.com/danv.dev/">@danv.dev</a></h3>
+        <h3>© 2022. Todos os direitos reservados Winpro Digital.</h3>
+    </div>
+</footer>
+
+<!--FUNÇÕES JS GERAIS-->
+<script src="js/functions.js"></script>
+
+<!--GOOGLE TAG MANAGER-->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJV988X" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<!--SOLO JS-->
+<script>
+//SLIDE DE PALAVRAS 
+var esp = document.getElementById("word-change");
+
+//as palavras de 0 a 3
+var change = ['RESULTADOS.','ESTRATÉGIAS.','MENTORIA.']
+
+    //função que muda palavras a cada 2.5 seg
+    c = 0;
+    setInterval(() => {
+        c++;
+       if (c > 2|| c == 3) {
+        c = 0;
+        esp.innerHTML = change[c];
+       }else{
+        esp.innerHTML = change[c];
+       }
+    }, 3000);
+
+
+
+/*sumir com todo conteúdo do site ao apertar o MENU MOBILE*/
+var ativar = document.getElementById("ativar-hamburguer");
+ativar.addEventListener('click',hamburguerAtivoDesaparecer);
+
+function hamburguerAtivoDesaparecer() {
+    //elementos que vão sumir
+    var wpp = document.getElementById("whatsapp");
+    var conteudo = document.querySelector("section");
+    var rodape = document.getElementById("rodape");
+
+    //elementos somem se checkbox for ativada
+    if (ativar.checked == true) {
+
+        wpp.style.display = "none";
+        conteudo.style.display = "none";
+        rodape.style.display = "none";
+
+    }else{
+        wpp.style.display = "";
+        conteudo.style.display = "";
+        rodape.style.display = "";
+    }
+}
+
+
+//algumas alterações no layout ao apertar no menu moobile
+ativar.addEventListener('click',hamburguerAtivoLayout);
+
+function hamburguerAtivoLayout(){
+    var topo = document.querySelector("header");
+    var label = document.querySelector("label");
+    var fundoH = document.getElementById("fundo-hamburguer");
+    var bl = document.getElementById("black-block");
+
+    if (ativar.checked == true) {
+        topo.style.flexDirection = "column";
+        label.style.display = "flex";
+        label.style.justifyContent = "center";
+        bl.style.display = "flex";
+        bl.style.justifyContent = "center";
+        fundoH.style.marginTop = "0px";
+    } else {
+        topo.style.flexDirection = "";
+        label.style.display = "";
+        label.style.justifyContent = "";
+        bl.style.display = "";
+        bl.style.justifyContent = "";
+        fundoH.style.marginTop = "";
+    }
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="img/logo2.ico"> 
+    <title>Contato - Winpro Digital</title>
+
+    <!--RESET-->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--ANIMATE.CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="css/hamburguer-estilo.css">
+    <link rel="stylesheet" href="css/contato.css">
+
+    <!--GOOGLE TAG MANAGER-->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TJV988X');
+    </script>
+</head>
+<body>
+
+    <!--MENU-->
+    <header>
+        <section>
+        <!--BLOCO PAI IMAGEM-->
+        <div id="image-menu">
+            <!--PRETO TRANSPARENTE-->
+            <div id="back-menu">
+
+                <!--LOGO/NOME DA PÁGINA-->
+                <div id="logo-block">
+                    <span class="animate__animated animate__rotateIn" tag="WINPRO LOGO"></span>
+                    <h1>CONTATO</h1>
+                </div>
+
+                <!--NAVEGAÇÃO TOPO-->
+                <div id="nav">
+                    <ul>
+                        <li><a href="/" >Home</a>/</li>
+                        <li><a href="quem-somos.html" >Quem Somos</a>/</li>
+                        <li><a href="feedback.html">Feedbacks</a>/</li>
+                        <li><a href="contatos.html" id="b1">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!--NAVEGAÇÃO MOBILE-->
+
+                <!--checkbox quando o menu-hamburguer for ativado-->
+                <input type="checkbox" id="ativar-hamburguer">
+
+                <!--indicação do que o checkbox ira acionar-->
+                <label for="ativar-hamburguer">
+
+                    <!--fundo-->
+                    <div id="fundo-hamburguer">
+                        <!--o hamburguer-->
+                        <span id="hamburguer"></span> 
+                    </div>
+
+                <!--LABEL - para a DESATIVAÇÃO e ATIVAÇÃO dos itens ao clicar no menu MOBILE.-->    
+                </label> 
+
+                <ul id="nav-hamburguer">
+                    <li><a href="/" >Home</a></li>
+                    <li><a href="quem-somos.html" >Quem Somos</a></li>
+                    <li><a href="feedback.html" >Feedbacks</a></li>
+                    <li><a href="contato.html" id="b2">Contato</a></li>
+                </ul>
+                <!--FIM NAVEGAÇÃO MOBILE-->
+
+            </div>
+        </div>
+    </section>
+    </header>
+
+    <!--CONTATO-->
+    <div id="form">
+        <div>
+            <h2>Se você se interessou pelo nosso trabalho, deixe um e-mail.<br>Nós responderemos assim que possível! ;)<br><i>A Winpro Digital Agradece.</i></h2>
+            <form onsubmit="validation()" action="https://formsubmit.co/winpro.marketing1@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="WinPro Digital - Novo contato pelo site."><!--assunto do email-->
+                <input id="name" type="text" placeholder="Nome" name="name" required>
+                <input id="email" type="email" name="email" placeholder="Email" required>
+                <textarea id="message" type="text"name="message" id="message" placeholder="Mensagem"></textarea>
+                <section>
+                    <button type="submit">Enviar</button>
+                    <input onclick="clean()" type="button" value="Limpar">
+                </section>
+                <input type="hidden" name="_next" value="https://winprodigital.com.br"><!--vai para o pag home-->
+                <input type="hidden" name="_captcha" value="false"><!--desativa formulario para captcha-->
+            </form>
+        </div>
+    </div>
+
+     <!--RODAPÉ-->
+     <footer id="rodape">
+        <div>
+            <a  target="_blank" href="https://www.instagram.com/winprodigital/"><img src="img/instagram.png" alt=""></a>
+            <a  target="_blank" href="https://www.facebook.com/winpro.digital"><img src="img/facebook.png" alt=""></a>
+            <a  target="_blank" href="https://www.linkedin.com/in/win-pro-122abb222"><img src="img/linkedin.png" alt=""></a>
+        </div>
+        <div>
+            <h3>winpro.marketing1@gmail.com</h3>
+            <h3>Feito com &#128155; por <a target="_blank" href="https://www.instagram.com/danv.dev/">@danv.dev</a></h3>
+            <h3>© 2022. Todos os direitos reservados Winpro Digital.</h3>
+        </div>
+    </footer>
+
+    <!--GERAL FUNCTIONS-->
+    <script src="js/functions.js"></script>
+
+    <!--GOOGLE TAG MANAGER-->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJV988X" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+    <!--SOLO SCRIPT-->
+    <script>
+
+        //MENU MOBILE
+        //sumir com todo conteúdo do site ao apertar o menu mobile
+        var ativar = document.getElementById("ativar-hamburguer");
+        ativar.addEventListener('click',hamburguerAtivoDesaparecer);
+
+
+        function hamburguerAtivoDesaparecer() {
+            //elementos que vão sumir
+            var logo = document.getElementById("logo-block");
+            var content = document.getElementById("form");
+            var wpp = document.getElementById("whatsapp");
+            var rodape = document.getElementById("rodape");
+
+            //elementos somem se checkbox for ativada
+            if (ativar.checked == true) {
+                logo.style.display = "none";
+                content.style.display = "none";
+                rodape.style.display = "none";
+            }else{
+                logo.style.display = "";
+                content.style.display = "";
+                rodape.style.display = "";
+            }
+        }
+
+        //modificações do layout
+        ativar.addEventListener('click',hamburguerAtivoLayout);
+
+        function hamburguerAtivoLayout(){
+            var topo = document.querySelector("header");
+            var section = document.querySelectorAll("section");
+            var labelM = document.querySelector("label");
+            var fMenu = document.getElementById("back-menu");
+            var fundoI = document.getElementById("image-menu");
+
+            if (ativar.checked == true) {
+                document.body.style.height = "100%";
+                document.documentElement.style.height = "100%";
+                labelM.style.width = "100%"
+                labelM.style.justifyContent = "flex-end"
+                topo.style.height = "100%"
+                section[0].style.height = "100%"
+                fundoI.style.height = "100%";
+                fundoI.style.background = "#ffffff"
+                fMenu.style.height = "100%";
+                fMenu.style.justifyContent = "center";
+                fMenu.style.flexDirection = "column";
+                
+            } else {
+                document.body.style.height = "";
+                document.documentElement.style.height = "";
+                labelM.style.width = ""
+                labelM.style.justifyContent = ""
+                topo.style.height = ""
+                section[0].style.height = ""
+                fundoI.style.height = "";
+                fundoI.style.background = ""
+                fMenu.style.height = "";
+                fMenu.style.justifyContent = "";
+                fMenu.style.flexDirection = "";
+            }
+        }
+
+        //BOTÃO LIMPAR
+        function clean() {
+            var mens = document.getElementById("message");
+            
+            mens.value = "";
+
+            mens.focus();
+        }
+
+        //VALIDAÇÃO
+        function validation(){
+            var nome = document.getElementById("name");
+            var email = document.getElementById("email");
+            var mens = document.getElementById("message");
+
+            if (nome.value == "" || email.value == "" || mens.value == "") {
+                alert("Preencha todos os campos.")
+                event.preventDefault();
+                location.href = "https://winprodigital.com.br/contato";
+                return false;
+            }
+
+            alert(`Obrigado(a) pela mensagem ${nome.value}! Fique de olho no seu e-mail, em breve responderemos.`)
+            return true;
+        }
+
+    </script>
+</body>
+</html>
